@@ -33,7 +33,7 @@ class App {
     }
     products.forEach(item => {
       productsArea.innerHTML += `
-      <div class="col">
+      <div class="col" style="margin-bottom: 20px;">
         <div class="p-3 border bg-light">
         <div class="card">
           <img style="width: 100%; max-width: 200px; margin: 0 auto;" src='${item.imgUrl}'> 
@@ -63,7 +63,11 @@ class App {
         popupContent.innerHTML += `<li class="list-group-item d-flex justify-content-between align-items-center">
         
         ${item.name} <span class="fs-6">${item.price}$</span>
-        <span class="badge rounded-pill bg-success">${item.count}</span>
+        <div>
+        <i class="fas fa-plus"></i>
+        <span class="badge rounded-pill bg-success" style="margin: 0 10px;">${item.count}</span>
+        <i class="fas fa-minus"></i>
+        </div>
       </li>`
       })
     }
@@ -74,6 +78,9 @@ class App {
   }
   saveCart() {
     sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+  }
+  updateCount() {
+    
   }
   clearCart = function () {
     cart = [];
@@ -138,6 +145,17 @@ class App {
   }
 
 }
+
+var active = document.getElementById("burger");
+// add Event Listener Click to Burger Icon Container
+active.addEventListener("click", function() {
+  //add or remove class "active" to Burger to start animation
+  this.classList.toggle("active");
+  //get menu-container by id
+  var menuShow = document.getElementById("menu");
+  //add or remove class "show" to show or hide menu and start its animations
+  menuShow.classList.toggle("show");
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const products = new App;
