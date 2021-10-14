@@ -1,0 +1,29 @@
+﻿{
+  "arrayOfProducts": [
+    {
+      "imgUrl": "https://images.unsplash.com/photo-1586136194012-35ceaddbd773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
+      "name": "CHECK PRINT SHIRT",
+      "price": 110
+    },
+    {
+      "imgUrl": "https://images.unsplash.com/photo-1586136194012-35ceaddbd773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
+      "name": "GLORIA HIGH LOGO SNEAKER",
+      "price": 91
+    },
+    {
+      "imgUrl": "https://images.unsplash.com/photo-1586136194012-35ceaddbd773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
+      "name": "CATE RIGID BAG",
+      "price": 94.5
+    },
+    {
+      "imgUrl": "https://images.unsplash.com/photo-1586136194012-35ceaddbd773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
+      "name": "GUESS CONNECT WATCH",
+      "price": 438.9
+    },
+    {
+      "imgUrl": "https://images.unsplash.com/photo-1586136194012-35ceaddbd773?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
+      "name": "'70s RETRO GLAM KEFIAH",
+      "price": 20
+    }
+  ]
+}
