@@ -62,11 +62,14 @@ class App {
       cartItem.forEach(item => {
         popupContent.innerHTML += `<li class="list-group-item d-flex justify-content-between align-items-center">
         
-        ${item.name} <span class="fs-6">${item.price}$</span>
+        ${item.name} 
         <div>
-        <i class="fas fa-plus"></i>
+        <span class="fs-6 cart-price">${item.price}</span><span class="fs-6">$</span>
+        </div>
+        <div>
+        <i class="fas fa-plus" onclick="plusCount(this)"></i>
         <span class="badge rounded-pill bg-success" style="margin: 0 10px;">${item.count}</span>
-        <i class="fas fa-minus"></i>
+        <i class="fas fa-minus" onclick="minusCount(this)"></i>
         </div>
       </li>`
       })
@@ -154,3 +157,22 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(() => products.addToCart())
     .then(() => products.renderCart(cart))
 })
+
+function plusCount (element) {
+  element.parentElement.querySelector('.badge').innerHTML++
+}
+
+function minusCount (element) {
+  element.parentElement.querySelector('.badge').innerHTML--
+}
+
+var active = document.getElementById("burger");
+// add Event Listener Click to Burger Icon Container
+active.addEventListener("click", function() {
+  //add or remove class "active" to Burger to start animation
+  this.classList.toggle("active");
+  //get menu-container by id
+  var menuShow = document.getElementById("menu");
+  //add or remove class "show" to show or hide menu and start its animations
+  menuShow.classList.toggle("show");
+});
